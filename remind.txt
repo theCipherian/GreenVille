@@ -1,0 +1,57 @@
+getData("manager_options.php")
+.then((resolve) => {
+placr.innerHTML = resolve;
+})
+.catch((reject) => {
+console.error(reject);
+});
+
+<?php
+   }else{
+    ?>
+  <div class="modal-1 cvv" style='background-color:rgba(255,255,255,0.90)!important;'>
+      <div class="modal-1_cont ">
+         <div class="m1c-head" style=' box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.01);'><span class="destro corner-border">Signin to account</span></div>
+         <div class="m1c-body" style=' box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.01);'>
+         <div class="lineloader"></div>
+          <div class="nb0" style='padding:10px'>
+          <div class="form">       
+              <div class="form-item">
+                <input type="text" id="email_address" autocomplete="off" required>
+                <label for="email_address">Email address</label>
+              </div>
+              <div class="form-item">
+                <input type="text" id="password" autocomplete="off" required>
+                <label for="password">Password</label>
+              </div>
+              <div class="form-item">          
+                  <select class="classic" id='acc_type'>
+                    <option disabled selected>Select account</option>
+                    <option value="Administrator">Administrator</option>
+                    <option value="Manager">Manager</option>
+                  </select>
+              </div>
+              <div id='sub-45' class="b">
+                SUBMIT
+              </div>
+                </div>
+          </div>
+         </div>
+      </div>
+    </div>
+<script>
+  let email_address, password, acc_type, sub;
+ 
+  email_address = document.getElementById("email_address");
+  password = document.getElementById("password");
+  acc_type = document.getElementById("acc_type");
+  sub = document.getElementById("sub-45");
+
+  sub.addEventListener("click", () => {
+    
+  })
+
+</script>
+<?php
+   }
+?>
