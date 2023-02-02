@@ -26,7 +26,7 @@ require("init.php");
             </div>
             <div class="form-item">          
             <input type="text" id="h_6" autocomplete="off" required>
-            <label for="home_address">Home addess</label>
+            <label for="home_address">Home address</label>
             </div>
             <div class="form-item">          
             <input type="number" id="h_7" autocomplete="off" required>
